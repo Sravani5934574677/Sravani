@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <style>
+      /* Main content area styling */
+      .main-content {
+          padding: 20px;
+          margin-left: 0; /* Default for mobile */
+      }
+      
+      /* For larger screens - adjust when sidebar is present */
+      @media (min-width: 992px) {
+          .main-content {
+              margin-left: 25%; /* Adjust based on your sidebar width */
+          }
+      }
+      
+      /* Content container styling */
+      .content-container {
+          background-color: white;
+          border-radius: 8px;
+          padding: 30px;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          margin-top: 20px;
+      }
+      
+      /* Add any additional page-specific styles here */
+      h1.page-title {
+          color: #06038D;
+          font-weight: 600;
+          margin-bottom: 30px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #06038D;
+      }
+       
+      .animated-content {
+          animation: fadeIn 0.5s ease-in-out;
+      }
+    </style>
+</head>
+<body>
+    <!-- Container that will hold both sidebar and content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar will be automatically inserted here by sidebar.js -->
+            
+            <!-- Main content area -->
+            <div class="col-lg-10 col-md-10 col-sm-12 pt-0 p-3 main-contents">
+                <div class="content-containerssss animasted-content">
+          
+          
+                                <!-- Main Content --> 
+                            <style>
+  
+
+    .containers {
+      max-width: 600px;
+      margin: 80px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    select {
+      width: 100%;
+      padding: 12px;
+      margin: 20px 0;
+      font-size: 16px;
+      border: 2px solid #007bff;
+      border-radius: 10px;
+      background-color: #f8fbff;
+      transition: all 0.3s ease;
+    }
+
+    select:focus {
+      outline: none;
+      background-color: #e3f0ff;
+    }
+
+    .fade-in {
+      animation: fade 0.4s ease-in-out;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn-view {
+      margin-top: 20px;
+      background-color: #007bff;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-view:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .containers {
+        margin: 40px 20px;
+        padding: 20px;
+      }
+    }
+
+    
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Container enhancements */
+.containers {
+  border: 3px solid #d0e3ff;
+  backdrop-filter: blur(4px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.containers:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 123, 255, 0.2);
+}
+
+/* Stylish dropdowns */
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10'%3E%3Cpath fill='%23007bff' d='M0 0 L5 5 L10 0'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+  padding-right: 40px;
+  color: #333;
+  font-weight: 500;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+/* Transition and glow on focus */
+select:focus {
+  border-color: #00bfff;
+  box-shadow: 0 0 0 4px rgba(0, 191, 255, 0.2);
+  background-color: #eefaff;
+}
+
+/* Button shine effect */
+.btn-view {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-view::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+  transform: skewX(-25deg);
+  transition: left 0.6s ease-in-out;
+}
+
+.btn-view:hover::before {
+  left: 130%;
+}
+
+/* Smooth slide-in animation */
+.fade-in {
+  animation: fade 0.5s ease-out, slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+  </style> 
+<div class="containers">
+  <h1>  H & B S (Humanities and Basics Of Science) Study Material 📚</h1>
+
+  <select id="semesterSelect" onchange="showSubjects()" class="fade-in">
+    <option value="">-- Select Semester --</option>
+    <option value="sem1">Semester 1</option>    
+    <option value="sem3">Semester 3</option>
+    <option value="sem4">Semester 4</option>
+    <option value="sem5">Semester 5</option>
+    
+  </select>
+
+  <select id="subjectSelect" class="fade-in" style="display: none;" onchange="openPDF()">
+    <option value="">-- Select Subject --</option>
+  </select>
+</div>
+
+<script>
+  const subjectsData = {
+    sem1: {
+      "Maths I": "pdfs/sem1/maths1.pdf",
+      "Physics": "pdfs/sem1/basic_programming.pdf",
+      "Chemistry": "pdfs/sem1/digital_fundamentals.pdf",
+      "English": "pdfs/sem1/digital_fundamentals.pdf"
+    },
+   
+    sem3: {
+       "Maths II": "pdfs/sem2/maths2.pdf",
+      "Communication Skills": "pdfs/sem2/c_programming.pdf",
+    },
+    sem4: {
+      "English": "pdfs/sem4/java.pdf",
+      
+    },
+    sem5: {
+      "Life Skills": "pdfs/sem5/web_dev.pdf",
+       
+    }
+  };
+
+  function showSubjects() {
+    const semester = document.getElementById("semesterSelect").value;
+    const subjectSelect = document.getElementById("subjectSelect");
+
+    subjectSelect.innerHTML = `<option value="">-- Select Subject --</option>`;
+    subjectSelect.style.display = "none";
+
+    if (semester && subjectsData[semester]) {
+      Object.entries(subjectsData[semester]).forEach(([subject, link]) => {
+        const option = document.createElement("option");
+        option.value = link;
+        option.textContent = subject;
+        subjectSelect.appendChild(option);
+      });
+      subjectSelect.style.display = "block";
+    }
+  }
+
+  function openPDF() {
+    const link = document.getElementById("subjectSelect").value;
+    if (link) {
+      window.open(link, '_blank');
+    }
+  }
+</script>
+
+        
+            </div>
+          </div>
+       
+  
+
+                    <!-- ======= END OF YOUR CONTENT ======= -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Required Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- Load the sidebar dynamically -->
+    <script src="cs.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Your custom JavaScript for this page -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Any page-specific initialization can go here
+            console.log("Page loaded with dynamic sidebar");
+        });
+    </script>
+</body>
+</html>
