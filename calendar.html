@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <style>
+      /* Main content area styling */
+      .main-content {
+          padding: 20px;
+          margin-left: 0; /* Default for mobile */
+      }
+      
+      /* For larger screens - adjust when sidebar is present */
+      @media (min-width: 992px) {
+          .main-content {
+              margin-left: 25%; /* Adjust based on your sidebar width */
+          }
+      }
+      
+      /* Content container styling */
+      .containers {
+          background-color: white;
+          border-radius: 8px;
+          padding: 30px;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          margin-top: 20px;
+      }
+      
+      /* Add any additional page-specific styles here */
+      h1.page-title {
+          color: #06038D;
+          font-weight: 600;
+          margin-bottom: 30px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #06038D;
+      }
+       
+      .animated-content {
+          animation: fadeIn 0.5s ease-in-out;
+      }
+    </style>
+</head>
+<body>
+    <!-- Container that will hold both sidebar and content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar will be automatically inserted here by sidebar.js -->
+            
+            <!-- Main content area -->
+      
+  <!-- Hero Section -->
+  <div class="hero-section text-white">
+      <h1 class="text-white text-bold">College Calendar</h1>
+
+       <p class="text-white">Stay updated with the important dates, events, and academic activities at Sri Venkateswara Polytechnic. Make sure you don’t miss out on any opportunities!</p>
+  </div>
+
+  <!-- Labs Section -->
+  <div class="containerssss">
+      <h2>Upcoming Events & Academic Calendar</h2><br><br>
+      <div class="card-grid">
+
+        
+          <!-- Card 1: Academic Year -->
+          <div class="card slide-up">
+            <img src="images/academic_calender.png" alt="Academic Year">
+            <h3>Academic Year 2024-2025</h3>
+            <p>The new academic year is set to begin soon! Get ready and start preparing for an exciting year ahead.</p>
+
+        </div>
+
+        <!-- Card 2: Semester Exam Dates -->
+        <div class="card fade-in">
+            <img src="images/sem_exam.jpg" alt="Exam Dates">
+            <h3>Semester Exam Dates</h3>
+            <p>Midterm exams are approaching soon. Be sure to review the syllabus for important details and stay prepared!</p>
+
+        </div>
+
+        <!-- Card 3: Cultural Fest -->
+        <div class="card slide-up">
+            <img src="images/college_fest.jpg" alt="Cultural Fest">
+            <h3>Cultural Fest 2025</h3>
+            <p>Get ready for the Annual Cultural Fest! Participate and showcase your talents in this exciting event.</p>
+
+        </div>
+
+        <!-- Card 4: Sports Day -->
+        <div class="card fade-in">
+            <img src="images/sports_day.jpg" alt="Sports Day">
+            <h3>Sports Day 2025</h3>
+            <p>Get ready for Sports Day! Compete in various events and win exciting prizes in this fun-filled event.</p>
+
+        </div>
+
+        <!-- Card 5: Alumni Meet -->
+        <div class="card slide-up">
+            <img src="images/alumni_meet.avif" alt="Alumni Meet">
+            <h3>Alumni Meet 2025</h3>
+            <p>Reconnect with old friends at the upcoming Alumni Meet. Register now and be part of the celebration!</p>
+
+        </div>
+
+        <!-- Card 6: Graduation Ceremony -->
+        <div class="card fade-in">
+            <img src="images/graduation_ceremony.jpg" alt="Graduation Ceremony">
+            <h3>Graduation Ceremony</h3>
+            <p>Mark your calendars for the upcoming Graduation Ceremony. Celebrate your achievements with pride!</p>
+
+        </div>
+
+
+      </div>
+
+      <!-- Call to Action -->
+      <div style="text-align: center; margin-top: 40px;">
+          <a href="#explore" class="cta-button">View Full Academic Calendar</a>
+      </div>
+  </div>
+
+
+   
+<style>
+
+    
+  .bg-header {
+      background: linear-gradient(to right, #0066cc, #66ccff);
+      color: white;
+      border-radius: 0 0 20px 20px;
+  }
+  
+  .header-title {
+      font-size: 2.5em;
+      margin: 0;
+      color: white;
+  }
+  
+  .header-subtitle {
+      font-size: 1.5em;
+  }
+      * {
+          box-sizing: border-box;
+      }
+  
+      body {
+          font-family: 'Poppins', sans-serif;
+          background-color: #f4f7fa;
+          margin: 0;
+          padding: 0;
+      }
+  
+      h1, h2 {
+          text-align: center;
+          color: #003366;
+      }
+  
+            /* Hero Section Styling */
+.hero-section {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  padding: 5rem 2rem;
+  text-align: center;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(90deg, #fff, #a7c7ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+      /* Container for Labs Section */
+      .containerssss {
+          max-width: 1200px;
+          margin: 50px auto;
+          padding: 0 20px;
+      }
+  
+      /* Card Grid Layout */
+      .card-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 30px;
+      }
+  
+      .card {
+          background-color: #fff;
+          border-radius: 12px;
+          padding: 30px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          position: relative;
+          overflow: hidden;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          text-align: center;
+      }
+  
+      .card img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 12px 12px 0 0;
+      }
+  
+      .card h3 {
+          color: #003366;
+          font-size: 1.8rem;
+          margin: 20px 0;
+      }
+  
+      .card p {
+          font-size: 1rem;
+          line-height: 1.8;
+          color: #555;
+          margin-bottom: 20px;
+      }
+  
+      .card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+      }
+   
+      /* CTA Button */
+      .cta-button {
+          background-color: #ffcc00;
+          color: #333;
+          padding: 15px 30px;
+          border-radius: 8px;
+          font-size: 1.2rem;
+          text-decoration: none;
+          margin-top: 20px;
+          display: inline-block;
+          transition: background 0.3s ease;
+      }
+  
+      .cta-button:hover {
+          background-color: #ff9900;
+      }
+  
+      /* Responsive Design */
+      @media (max-width: 768px) {
+          .hero-section h1 {
+              font-size: 2.5rem;
+          }
+      }
+  
+      
+  
+      .btn-learn-more {
+          margin-top: 15px;
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: #ffffff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+      }
+  
+      .btn-learn-more:hover {
+          background-color: #0056b3;
+      }
+  </style>
+        
+
+
+
+
+
+
+
+                    <!-- ======= END OF YOUR CONTENT ======= -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Required Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- Load the sidebar dynamically -->
+    
+    <script src="script.js"></script>
+
+    <!-- Your custom JavaScript for this page -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Any page-specific initialization can go here
+            console.log("Page loaded with dynamic sidebar");
+        });
+    </script>
+</body>
+</html>
