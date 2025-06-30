@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <style>
+      /* Main content area styling */
+      .main-content {
+          padding: 20px;
+          margin-left: 0; /* Default for mobile */
+      }
+      
+      /* For larger screens - adjust when sidebar is present */
+      @media (min-width: 992px) {
+          .main-content {
+              margin-left: 25%; /* Adjust based on your sidebar width */
+          }
+      }
+      
+      /* Content container styling */
+      .content-container {
+          background-color: white;
+          border-radius: 8px;
+          padding: 30px;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          margin-top: 20px;
+      }
+      
+      /* Add any additional page-specific styles here */
+      h1.page-title {
+          color: #06038D;
+          font-weight: 600;
+          margin-bottom: 30px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #06038D;
+      }
+       
+      .animated-content {
+          animation: fadeIn 0.5s ease-in-out;
+      }
+    </style>
+</head>
+<body>
+    <!-- Container that will hold both sidebar and content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar will be automatically inserted here by sidebar.js -->
+            
+            <!-- Main content area -->
+            <div class="col-lg-10 col-md-10 col-sm-12 pt-0 p-3 main-contents">
+                <div class="content-containerssss animasted-content">
+          
+           
+
+                         <style>
+ 
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #004080;
+      margin-bottom: 40px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 20px 35px rgba(0, 123, 255, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: 0.3s ease;
+    }
+
+    .card:hover img {
+      filter: brightness(0.9);
+    }
+
+    .card h3 {
+      font-size: 20px;
+      color: #002f6c;
+      margin: 15px 0;
+    }
+
+    @media (max-width: 600px) {
+      .card h3 {
+        font-size: 18px;
+      }
+    }
+  </style> 
+
+  <h1 class="pt-5 pb-5 p-3 text-center">🏫 Our World</h2>
+
+  <div class="gallery">
+    <div class="card" onclick="location.href='cse.html'">
+      <img src="images/cse.jpg" alt="CSE Department">
+      <h3>Computer Engineering</h3>
+    </div>
+
+    <div class="card" onclick="location.href='ece.html'">
+      <img src="images/ece.jpg" alt="ECE Department">
+      <h3>Computer Engineering</h3>
+    </div>
+
+    <div class="card" onclick="location.href='eee.html'">
+      <img src="images/eee.jpg" alt="EEE Department">
+      <h3>Computer Engineering</h3>
+    </div>
+
+    <div class="card" onclick="location.href='mech.html'">
+      <img src="images/mech.jpg" alt="Mechanical Department">
+      <h3>Computer Engineering</h3>
+    </div>
+
+    
+  </div>
+         
+
+        
+            </div>
+          </div>
+       
+  
+
+  
+ 
+    <style>
+        .image-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh; /* Full height for vertical centering */
+        }
+        
+        .imgs {
+        max-width: 100%;
+        height: auto;
+        }
+    </style>
+ 
+  
+
+                    <!-- ======= END OF YOUR CONTENT ======= -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Required Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- Load the sidebar dynamically -->
+    <script src="cme.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Your custom JavaScript for this page -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Any page-specific initialization can go here
+            console.log("Page loaded with dynamic sidebar");
+        });
+    </script>
+</body>
+</html>
