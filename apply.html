@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <style>
+      /* Main content area styling */
+      .main-content {
+          padding: 20px;
+          margin-left: 0; /* Default for mobile */
+      }
+      
+      /* For larger screens - adjust when sidebar is present */
+      @media (min-width: 992px) {
+          .main-content {
+              margin-left: 25%; /* Adjust based on your sidebar width */
+          }
+      }
+      
+      /* Content container styling */
+      .content-container {
+          background-color: white;
+          border-radius: 8px;
+          padding: 30px;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          margin-top: 20px;
+      }
+      
+      /* Add any additional page-specific styles here */
+      h1.page-title {
+          color: #06038D;
+          font-weight: 600;
+          margin-bottom: 30px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #06038D;
+      }
+       
+      .animated-content {
+          animation: fadeIn 0.5s ease-in-out;
+      }
+    </style>
+</head>
+<body>
+    <!-- Container that will hold both sidebar and content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar will be automatically inserted here by sidebar.js -->
+            
+            <!-- Main content area -->
+           
+
+            
+    <!-- Hero Section -->
+    <div class="hero-section mt-3 text-center">
+      <h1 class="text-white"> Apply to Sri Venkateswara Polytechnic</h1>
+      <p class="text-white">Fill in the form below to begin your application process. We value each student’s journey and can’t wait to help you succeed at Sri Venkateswara Polytechnic!</p>
+    </div>
+
+
+              <style>
+
+             
+            /* Hero Section Styling */
+.hero-section {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  padding: 5rem 2rem;
+  text-align: center;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(90deg, #fff, #a7c7ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+    .apply-form-container {
+      max-width: 650px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    }
+    .form-title {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #0d47a1;
+      font-weight: 700;
+    }
+    .btn-submit {
+      background: #0d47a1;
+      color: #fff;
+      font-weight: 600;
+    }
+    .btn-submit:hover {
+      background: white;
+    }
+    .why-choose-us-card {
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Elegant blue gradient */
+  color: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 800px;
+  margin: 50px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-choose-us-card h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.why-choose-us-card p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.why-choose-us-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .why-choose-us-card {
+    padding: 30px 20px;
+  }
+
+  .why-choose-us-card h1 {
+    font-size: 2rem;
+  }
+
+  .why-choose-us-card p {
+    font-size: 1rem;
+  }
+}
+
+  </style>
+ 
+
+<div class="container apply-form-container">
+
+  <div class="why-choose-us-card">
+  <h1 class="text-white">Why Choose Us?</h1>
+  <p>
+    Our college offers a range of courses, world-class facilities, and a vibrant campus life.
+    By enrolling, you step into an academic environment focused on excellence and innovation.
+  </p>
+</div>
+
+  <form>
+    <div class="mb-3">
+      <label for="fullName" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="dob" class="form-label">Date of Birth</label>
+      <input type="date" class="form-control" id="dob" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="phone" class="form-label">Phone Number</label>
+      <input type="tel" class="form-control" id="phone" placeholder="e.g. 9876543210" required pattern="[0-9]{10}">
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email Address</label>
+      <input type="email" class="form-control" id="email" placeholder="yourname@example.com" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="department" class="form-label">Select Department</label>
+      <select class="form-select" id="department" required>
+        <option value="">Choose your preferred branch</option>
+        <option>Computer Engineering</option>
+        <option>Electronics & Communication Engineering</option>
+        <option>Mechanical Engineering</option>
+        <option>Civil Engineering</option>
+        <option>Electronic Electrical Engineering</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="address" class="form-label">Address</label>
+      <textarea class="form-control" id="address" rows="3" placeholder="Enter your complete address" required></textarea>
+    </div>
+
+    <div class="text-center">
+      <button type="submit" class="btn btn-submit px-4">Submit Application</button>
+    </div>
+  </form>
+</div>
+
+       
+  <script>
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Stop default form submission
+
+    // Grab values
+    const fullName = document.getElementById("fullName").value.trim();
+    const dob = document.getElementById("dob").value;
+    const phone = document.getElementById("phone").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const department = document.getElementById("department").value;
+    const address = document.getElementById("address").value.trim();
+
+    // Validation flags
+    let isValid = true;
+    let errorMessage = "";
+
+    // Full name validation
+    if (fullName === "") {
+      isValid = false;
+      errorMessage += "⚠️ Full Name is required.\n";
+    }
+
+    // DOB validation
+    if (!dob) {
+      isValid = false;
+      errorMessage += "⚠️ Date of Birth is required.\n";
+    } else {
+      const dobDate = new Date(dob);
+      const today = new Date();
+      if (dobDate >= today) {
+        isValid = false;
+        errorMessage += "⚠️ Date of Birth must be in the past.\n";
+      }
+    }
+
+    // Phone number validation (10 digits)
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(phone)) {
+      isValid = false;
+      errorMessage += "⚠️ Phone number must be exactly 10 digits.\n";
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      isValid = false;
+      errorMessage += "⚠️ Please enter a valid email address.\n";
+    }
+
+    // Department validation
+    if (department === "") {
+      isValid = false;
+      errorMessage += "⚠️ Please select a department.\n";
+    }
+
+    // Address validation
+    if (address.length < 5) {
+      isValid = false;
+      errorMessage += "⚠️ Please enter a valid address.\n";
+    }
+
+    // Show error or success
+    if (!isValid) {
+      alert(errorMessage);
+    } else {
+      alert("✅ Application submitted successfully!");
+      // You can submit the form via AJAX here if needed
+      // e.target.submit(); // Uncomment to allow real form submission
+    }
+  });
+</script>
+
+
+                    <!-- ======= END OF YOUR CONTENT ======= -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Required Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- Load the sidebar dynamically -->
+    
+    <script src="script.js"></script>
+
+    <!-- Your custom JavaScript for this page -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Any page-specific initialization can go here
+            console.log("Page loaded with dynamic sidebar");
+        });
+    </script>
+</body>
+</html>
